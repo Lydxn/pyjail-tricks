@@ -48,6 +48,6 @@ fake_bytearray = (
 )
 
 # From here, we can do whatever we want (overwrite sandbox restrictions, bypass
-# udit hooks, etc.), but here's one comical example:
+# audit hooks, etc.), but here's one comical example:
 UAF.mem[id(250) + 24] = 100
 print(250)  # -> prints '100'
